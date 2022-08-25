@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    
+<div>
+    <a href="{% url 'edit'   %}">
+        <button name="edit-btn" style="background-color: rgba(43, 0, 255, 0.316); color: red;">Edit</button></a>
+   </div>
+   
+    {{ xy|safe }}
+    {{entry}}
+
+{% endblock %}
